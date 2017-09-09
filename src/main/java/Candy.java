@@ -3,7 +3,7 @@
  *
  */
 
-import java.util.Arrays;
+import java.util.*;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
@@ -94,8 +94,7 @@ public class Candy {
 
   public static int rightCands(int[] arr, int left, int right) {
     int n = right - left + 1;
-    int res = n + n * (n - 1) / 2;
-    return res;
+    return n + n * (n - 1) / 2;
   }
 
 
@@ -107,5 +106,9 @@ public class Candy {
     System.out.println(result2);
     int result3 = candy3(a);
     System.out.println(result3);
+    Set<String> s= new HashSet<>();
+    s.contains("Df");
+    List<String> sx= new LinkedList<>();
+    sx.contains("df");
   }
 }
