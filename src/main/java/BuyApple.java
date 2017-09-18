@@ -13,7 +13,7 @@ public class BuyApple {
     Scanner scanner = new Scanner(System.in);
     int n= scanner.nextInt();
     int k=n;
-    while (n%8!=0){
+    while (n> 0&&n%8!=0){
       n=n-6;
     }
     int a = n/8+(k-n)/6;
